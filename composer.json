@@ -12,7 +12,5 @@
     "issues": "https://github.com/xcono/xtools/issues",
     "source": "https://github.com/xcono/xtools"
   },
-  "require": {
-    "drupal/paragraphs": "~1.0"
-  }
+  "require": {}
 }
