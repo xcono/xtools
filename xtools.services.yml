@@ -1,0 +1,9 @@
+services:
+
+    xtools.taxonomy.manager:
+        class: Drupal\xtools\Manager\TaxonomyTree
+        arguments: ['@entity_type.manager']
+
+    xtools.form.mailer:
+        class: Drupal\xtools\Form\FormMailer
+        arguments: ['@plugin.manager.mail']
