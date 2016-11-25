@@ -1,10 +1,7 @@
 <?php
 
-/**
- * @file
- */
+namespace Drupal\xtools\Taxonomy;
 
-namespace Drupal\xtools\Manager;
 use Drupal\Core\Url;
 
 /**
