@@ -1,7 +1,7 @@
 services:
 
     xtools.taxonomy.manager:
-        class: Drupal\xtools\Manager\TaxonomyTree
+        class: Drupal\xtools\Taxonomy\TaxonomyTree
         arguments: ['@entity_type.manager']
 
     xtools.form.mailer:
