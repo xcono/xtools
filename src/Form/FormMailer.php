@@ -47,7 +47,7 @@ class FormMailer
         ];
 
 
-        $result = $this->mailManager->mail('xcore', 'default', $to, \Drupal::currentUser()->getPreferredLangcode(), $params, null, true);
+        $result = $this->mailManager->mail('xtools', 'default', $to, \Drupal::currentUser()->getPreferredLangcode(), $params, null, true);
 
         if ($result['result'] !== true) {
 
