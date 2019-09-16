@@ -90,6 +90,14 @@ class TaxonomyTree {
             }
         }
 
-        return $list[$parent]['children'];
+      $links = $list[$parent]['children'];
+
+      // Sort tree by depth so we can easily find out the deepest level
+      uasort($links, function($a, $b) {
+        // Change objects to array
+        return \Drupal\Component\Utility\SortArray::sortByKeyInt((array) $a, (array) $b, 'weight');
+      });
+
+      return $links;
     }
 }
