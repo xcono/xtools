@@ -98,7 +98,6 @@ class TaxonomyTree {
         return \Drupal\Component\Utility\SortArray::sortByKeyString((array) $a, (array) $b, 'label');
       });
 
-      dump($tree);
       return $links;
     }
 }
