@@ -95,9 +95,10 @@ class TaxonomyTree {
       // Sort tree by depth so we can easily find out the deepest level
       uasort($links, function($a, $b) {
         // Change objects to array
-        return \Drupal\Component\Utility\SortArray::sortByKeyInt((array) $a, (array) $b, 'weight');
+        return \Drupal\Component\Utility\SortArray::sortByKeyString((array) $a, (array) $b, 'label');
       });
 
+      dump($tree);
       return $links;
     }
 }
