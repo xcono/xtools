@@ -34,6 +34,8 @@ function xtools_mail($key, &$message, $params)
     switch ($key) {
 
         case 'default':
+            // note: $message['from'] is required, otherwise the email will not be sent
+            // the only way in drupal 8 to set the from email address is to set it in the $message array
             $message['from'] = $message['from'] ?: \Drupal::config('system.site')->get('mail');
             $message['subject'] = $params['title'];
             $message['body'][] = Drupal\Component\Utility\Html::escape($params['message']);
